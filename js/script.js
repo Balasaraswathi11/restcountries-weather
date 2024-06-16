@@ -125,7 +125,8 @@ fetchrestcountry().then(data => {
     //weather button
     var weatherdiv=document.createElement("div")
     weatherdiv.className="weather-div d-flex justify-content-center p-5"
-    weatherbutton.innerText="Check Weather"
+    var weatherbutton=document.createElement("button")
+    weatherbutton.innerText="Check for Weather"
     weatherbutton.className=" button btn btn-primary "
     weatherdiv.appendChild(weatherbutton)
     cardbody.append(weatherdiv)
